@@ -1,1 +1,16 @@
-<p>restaurant-items works!</p>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Zomato Item List</h1>
+    <div class="row row-cols-4 row-cols-md-4 g-4">
+        <div class="col" *ngFor="let item of items">
+            <a>
+                <div class="card card-food">
+                    <img [src]="item.photoUrl" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">{{item.menuItemName}}</h5>
+                    </div>
+                </div>
+            </a>
+        </div> 
+    </div>
+</div>
+
